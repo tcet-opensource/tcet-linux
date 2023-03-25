@@ -1,0 +1,35 @@
+name: Build TCET Linux ISO
+
+on:
+  push:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    
+    permissions:
+      contents: write
+
+    container:
+      image: archlinux:latest
+      options: --privileged
+      
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Update packages and install archiso
+        run: pacman -Syu --noconfirm archiso mkinitcpio-archiso git squashfs-tools
+
+      - name: Build ISO
+        run: |
+          pacman -S --noconfirm --needed archlinux-keyring wget
+          wget https://raw.githubusercontent.com/theCode-Breaker/arch-linux-gui-gnome/master/pacman.conf -O /etc/pacman.conf
+          #echo "Fetching chaotic keys"
+          #pacman-key --init && pacman-key --recv-key 0706B90D37D9B881 FBA220DFC880C036 --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 0706B90D37D9B881 FBA220DFC880C036 && pacman --noconfirm -U 'https://geo-mirror.chaotic.cx/chaotic-aur/chaotic-'{keyring,mirrorlist}'.pkg.tar.zst' && echo "[chaotic-aur]" >> /etc/pacman.conf && echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+          #pacman-key --populate archlinux chaotic
+          mkarchiso -v -w ./work -o ./out ./
+          echo "ISO Built in ./out folder!"
