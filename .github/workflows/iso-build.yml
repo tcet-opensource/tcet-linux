@@ -21,10 +21,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Update packages and install archiso
+      - name: Set current date as environment variable
+        run: echo "DATE=`date +'%Y.%m.%d'`" >>$GITHUB_ENV
+      
+      - name: Synchronise package repositories and install archiso
         run: pacman -Syu --noconfirm archiso mkinitcpio-archiso git squashfs-tools
 
-      - name: Build ISO
+      - name: Build TCET Linux ISO
         run: |
           pacman -S --noconfirm --needed archlinux-keyring wget
           wget https://raw.githubusercontent.com/theCode-Breaker/arch-linux-gui-gnome/master/pacman.conf -O /etc/pacman.conf
@@ -33,3 +36,14 @@ jobs:
           #pacman-key --populate archlinux chaotic
           mkarchiso -v -w ./work -o ./out ./
           echo "ISO Built in ./out folder!"
+          
+      - name: Release ISO File
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: ${{ env.DATE }}
+          prerelease: false
+          title: "tcet-linux"
+          files: |
+            out/*
+            
