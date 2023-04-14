@@ -143,12 +143,12 @@ network-manager-applet
 xfce4
 xfce4-goodies
 xf86-video-intel
-mugshot
+#mugshot
 
 ## TCET Linux Theme
-tela-circle-icon
-qogir-gtk-theme-git
-tcet-linux-xfce-settings
+#tela-circle-icon
+#qogir-gtk-theme-git
+#tcet-linux-xfce-settings
 
 ## TCET Linux Audio Driver and Tools
 pulseaudio
@@ -164,30 +164,30 @@ xdotool
 vlc
 
 ## TCET Linux Installer
-grub
-calamares
-tcet-linux-cala-config
-os-prober
+#grub
+#calamares
+#tcet-linux-cala-config
+#os-prober
 
 
 ## TCET Linux Browser
 firefox
-tcet-linux-firefox-settings
+#tcet-linux-firefox-settings
 
 ## TCET Linux Office Suite
-libreoffice-fresh
-ttf-ms-fonts
-ttf-roboto
-noto-fonts
+#libreoffice-fresh
+#ttf-ms-fonts
+#ttf-roboto
+#noto-fonts
 
 ## TCET Linux Bluetooth Driver & Manager
-bluez
-bluez-utils
-blueman
+#bluez
+#bluez-utils
+#blueman
 
 ## AUR Installer and Helper
-paru
+#paru
 
 # Printer Driver
-cups
-system-config-printer
+#cups
+#system-config-printer
