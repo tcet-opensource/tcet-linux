@@ -1,3 +1,6 @@
+##TCET Linux Live ISO Packages
+
+#ArchISO Defaults
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -122,3 +125,69 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+## TCET Linux Core
+xorg
+lightdm
+lightdm-gtk-greeter
+xdg-user-dirs
+bash-completion
+networkmanager
+network-manager-applet
+#base-devel
+#pacman-contrib
+#virtualbox-guest-utils
+
+
+## TCET Linux Desktop Env - XFCE
+xfce4
+xfce4-goodies
+xf86-video-intel
+mugshot
+
+## TCET Linux Theme
+tela-circle-icon
+qogir-gtk-theme-git
+tcet-linux-xfce-settings
+
+## TCET Linux Audio Driver and Tools
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
+pavucontrol
+
+## TCET Linux Utility Packages
+gvfs
+neofetch
+galculator
+xdotool
+vlc
+
+## TCET Linux Installer
+grub
+calamares
+tcet-linux-cala-config
+os-prober
+
+
+## TCET Linux Browser
+firefox
+tcet-linux-firefox-settings
+
+## TCET Linux Office Suite
+libreoffice-fresh
+ttf-ms-fonts
+ttf-roboto
+noto-fonts
+
+## TCET Linux Bluetooth Driver & Manager
+bluez
+bluez-utils
+blueman
+
+## AUR Installer and Helper
+paru
+
+# Printer Driver
+cups
+system-config-printer
