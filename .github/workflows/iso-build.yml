@@ -2,7 +2,7 @@ name: Build TCET Linux ISO
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "xfce-de" ]
 
   workflow_dispatch:
 
