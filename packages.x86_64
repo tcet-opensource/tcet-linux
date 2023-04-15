@@ -50,10 +50,11 @@ less
 lftp
 libfido2
 libusb-compat
-linux-zen
+linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
+lsb-release
 livecd-sounds
 lsscsi
 lvm2
