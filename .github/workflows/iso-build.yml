@@ -33,3 +33,13 @@ jobs:
           #pacman-key --populate archlinux chaotic
           mkarchiso -v -w ./work -o ./out ./
           echo "ISO Built in ./out folder!"
+          
+      - name: Release ISO File
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: ${{ env.DATE }}
+          prerelease: false
+          title: "tcet-linux"
+          files: |
+            out/*
