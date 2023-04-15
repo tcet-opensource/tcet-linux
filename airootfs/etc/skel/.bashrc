@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 #Display ISO version and distribution information in short
-alias version="sed -n 1p /etc/os-release && sed -n 11p /etc/os-release && sed -n 12p /etc/os-release"
+alias version="sed -n 1p /etc/os-release && sed -n 7p /etc/os-release && sed -n 8p /etc/os-release"
 
 #Pacman Shortcuts
 alias sync="sudo pacman -Syyy"
