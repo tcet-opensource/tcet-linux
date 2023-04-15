@@ -165,8 +165,8 @@ pavucontrol
 
 ## TCET Linux Installer
 #grub
-#calamares
-#tcet-linux-cala-config
+calamares
+tcet-linux-installer-config
 #os-prober
 
 
