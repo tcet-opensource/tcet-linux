@@ -1,6 +1,6 @@
 #!/bin/bash
 # driver=free or driver=nonfree - grub and efi
-echo "Start alg-remove-nvidia"
+echo "Start tl-remove-nvidia"
 kernel_cmdline(){
 	for param in $(cat /proc/cmdline); do
 		case "${param}" in
@@ -51,7 +51,7 @@ fi
 
 
 echo "#################################"
-echo "End alg-remove-nvidia"
+echo "End tl-remove-nvidia"
 echo "#################################"
-rm /usr/local/bin/alg-remove-nvidia
+rm /usr/local/bin/tl-remove-nvidia
 

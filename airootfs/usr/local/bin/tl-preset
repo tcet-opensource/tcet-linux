@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mv -v /etc/mkinitcpio.d/alg /etc/mkinitcpio.d/linux.preset
+mv -v /etc/mkinitcpio.d/tcetlinux /etc/mkinitcpio.d/linux.preset
 
-rm /usr/local/bin/alg-preset
+rm /usr/local/bin/tl-preset
