@@ -1,124 +1,235 @@
-alsa-utils
+## TCET Linux Live ISO Packages
+
+# ArchISO Defaults
+# alsa-utils
+# amd-ucode
+# arch-install-scripts
+# archinstall
+# b43-fwcutter
+# base
+# bind
+# brltty
+# broadcom-wl
+# btrfs-progs
+# clonezilla
+# cloud-init
+# cryptsetup
+# darkhttpd
+# ddrescue
+# dhclient
+# dhcpcd
+# diffutils
+# dmidecode
+# dmraid
+# dnsmasq
+# dosfstools
+# e2fsprogs
+# edk2-shell
+# efibootmgr
+# espeakup
+# ethtool
+# exfatprogs
+# f2fs-tools
+# fatresize
+# fsarchiver
+# gnu-netcat
+# gpart
+# gpm
+# gptfdisk
+# grml-zsh-config
+# grub
+# hdparm
+# hyperv
+# intel-ucode
+# irssi
+# iw
+# iwd
+# jfsutils
+# kitty-terminfo
+# less
+# lftp
+# libfido2
+# libusb-compat
+# linux
+# linux-atm
+# linux-firmware
+# linux-firmware-marvell
+# livecd-sounds
+# lsscsi
+# lvm2
+# lynx
+# man-db
+# man-pages
+# mc
+# mdadm
+# memtest86+
+# memtest86+-efi
+# mkinitcpio
+# mkinitcpio-archiso
+# mkinitcpio-nfs-utils
+# modemmanager
+# mtools
+# nano
+# nbd
+# ndisc6
+# nfs-utils
+# nilfs-utils
+# nmap
+# ntfs-3g
+# nvme-cli
+# open-iscsi
+# open-vm-tools
+# openconnect
+# openssh
+# openvpn
+# partclone
+# parted
+# partimage
+# pcsclite
+# ppp
+# pptpclient
+# pv
+# qemu-guest-agent
+# refind
+# reflector
+# reiserfsprogs
+# rp-pppoe
+# rsync
+# rxvt-unicode-terminfo
+# screen
+# sdparm
+# sg3_utils
+# smartmontools
+# sof-firmware
+# squashfs-tools
+# sudo
+# syslinux
+# systemd-resolvconf
+# tcpdump
+# terminus-font
+# testdisk
+# tmux
+# tpm2-tss
+# udftools
+# usb_modeswitch
+# usbmuxd
+# usbutils
+# vim
+# virtualbox-guest-utils-nox
+# vpnc
+# wireless-regdb
+# wireless_tools
+# wpa_supplicant
+# wvdial
+# xfsprogs
+# xl2tpd
+# zsh
+
+
+## TCET Linux Kernel
+linux-zen
+linux-zen-headers
+#linux-firmware
+#linux-firmware-marvell
+
+## CPU Mircocode
 amd-ucode
-arch-install-scripts
-archinstall
+intel-ucode
+
+## Drivers & Kernel Modules
 b43-fwcutter
+
+
+## TCET Linux Core
 base
-bind
-brltty
-broadcom-wl
-btrfs-progs
-clonezilla
-cloud-init
-cryptsetup
-darkhttpd
-ddrescue
-dhclient
+zsh
+zsh-completion
+pacman
+pacman-mirrorlist
+pacman-contrib
+base-devel
+sudo
+
+## TCET Linux Networking
 dhcpcd
-diffutils
-dmidecode
-dmraid
-dnsmasq
+networkmanager
+wpa_supplicant
+wireless_tools
+network-manager-applet
+
+## TCET Linux Filesystem
+btrfs-progs
 dosfstools
 e2fsprogs
 edk2-shell
-efibootmgr
-espeakup
-ethtool
-exfatprogs
 f2fs-tools
-fatresize
-fsarchiver
-gnu-netcat
-gpart
-gpm
-gptfdisk
-grml-zsh-config
-grub
-hdparm
-hyperv
-intel-ucode
-irssi
-iw
-iwd
-jfsutils
-kitty-terminfo
-less
-lftp
-libfido2
-libusb-compat
-linux
-linux-atm
-linux-firmware
-linux-firmware-marvell
-lsb-release
-livecd-sounds
-lsscsi
-lvm2
-lynx
-man-db
-man-pages
-mc
-mdadm
-memtest86+
-memtest86+-efi
-mkinitcpio
-mkinitcpio-archiso
-mkinitcpio-nfs-utils
-modemmanager
-mtools
-nano
-nbd
-ndisc6
-nfs-utils
-nilfs-utils
-nmap
-ntfs-3g
-nvme-cli
-open-iscsi
-open-vm-tools
-openconnect
-openssh
-openvpn
-partclone
-parted
-partimage
-pcsclite
-ppp
-pptpclient
-pv
-qemu-guest-agent
-refind
-reflector
-reiserfsprogs
-rp-pppoe
-rsync
-rxvt-unicode-terminfo
-screen
-sdparm
-sg3_utils
-smartmontools
-sof-firmware
-squashfs-tools
-sudo
-syslinux
-systemd-resolvconf
-tcpdump
-terminus-font
-testdisk
-tmux
-tpm2-tss
-udftools
-usb_modeswitch
-usbmuxd
-usbutils
-vim
-virtualbox-guest-utils-nox
-vpnc
-wireless-regdb
-wireless_tools
-wpa_supplicant
-wvdial
 xfsprogs
-xl2tpd
-zsh
+
+## Terminfo
+kitty-terminfo
+rxvt-unicode-terminfo
+
+## Terminal Based Text Editors
+vim
+nano
+
+## TCET Linux Graphical Env X11 + XFCE
+# xorg
+# lightdm
+# lightdm-gtk-greeter
+# xfce4
+# xfce4-goodies
+# xf86-video-intel
+# xdg-user-dirs
+#virtualbox-guest-utils
+#mugshot
+
+## TCET Linux Audio Driver and Tools
+# alsa
+# alsa-utils
+# pulseaudio
+# pulseaudio-alsa
+# pulseaudio-bluetooth
+# pavucontrol
+
+## TCET Linux Utility Packages
+#gvfs
+neofetch
+#galculator
+#xdotool
+#vlc
+
+## TCET Linux Installer
+# grub
+# calamares
+# tcet-linux-installer-config
+# syslinux
+# efibootmgr
+#os-prober
+
+## TCET Linux Theme
+#tela-circle-icon
+#qogir-gtk-theme-git
+#tcet-linux-xfce-settings
+
+## TCET Linux Browser
+#firefox
+#tcet-linux-firefox-settings
+
+## TCET Linux Office Suite
+#libreoffice-fresh
+#ttf-ms-fonts
+#ttf-roboto
+#noto-fonts
+
+## TCET Linux Bluetooth Driver & Manager
+#bluez
+#bluez-utils
+#blueman
+
+## AUR Installer and Helper
+#paru
+
+# Printer Driver
+#cups
+#system-config-printer
