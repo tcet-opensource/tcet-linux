@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mv -v /etc/mkinitcpio.d/tcetlinux /etc/mkinitcpio.d/linux.preset
+
+rm /usr/local/bin/tl-preset
