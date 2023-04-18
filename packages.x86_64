@@ -134,21 +134,21 @@ xdg-user-dirs
 bash-completion
 networkmanager
 network-manager-applet
-#base-devel
-#pacman-contrib
+base-devel
+pacman-contrib
 #virtualbox-guest-utils
 
 
 ## TCET Linux Desktop Env - XFCE
 xfce4
 xfce4-goodies
-xf86-video-intel
+#xf86-video-intel
 #mugshot
 
 ## TCET Linux Theme
-#tela-circle-icon
-#qogir-gtk-theme-git
-#tcet-linux-xfce-settings
+tela-circle-icon
+qogir-gtk-theme-git
+tcet-linux-settings
 
 ## TCET Linux Audio Driver and Tools
 pulseaudio
@@ -175,15 +175,15 @@ firefox
 #tcet-linux-firefox-settings
 
 ## TCET Linux Office Suite
-#libreoffice-fresh
-#ttf-ms-fonts
-#ttf-roboto
-#noto-fonts
+libreoffice-fresh
+ttf-ms-fonts
+ttf-roboto
+noto-fonts
 
 ## TCET Linux Bluetooth Driver & Manager
-#bluez
-#bluez-utils
-#blueman
+bluez
+bluez-utils
+blueman
 
 ## AUR Installer and Helper
 #paru
