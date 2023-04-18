@@ -27,7 +27,7 @@ jobs:
       - name: Build TCET Linux ISO
         run: |
           pacman -S --noconfirm --needed archlinux-keyring wget
-          wget https://raw.githubusercontent.com/theCode-Breaker/arch-linux-gui-gnome/master/pacman.conf -O /etc/pacman.conf
+          wget https://raw.githubusercontent.com/tcet-opensource/tcet-linux/main/pacman.conf -O /etc/pacman.conf
           #echo "Fetching chaotic keys"
           #pacman-key --init && pacman-key --recv-key 0706B90D37D9B881 FBA220DFC880C036 --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 0706B90D37D9B881 FBA220DFC880C036 && pacman --noconfirm -U 'https://geo-mirror.chaotic.cx/chaotic-aur/chaotic-'{keyring,mirrorlist}'.pkg.tar.zst' && echo "[chaotic-aur]" >> /etc/pacman.conf && echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
           #pacman-key --populate archlinux chaotic
