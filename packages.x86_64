@@ -52,8 +52,8 @@ libfido2
 libusb-compat
 linux-zen
 #linux-atm
-#linux-firmware
-#linux-firmware-marvell
+linux-firmware
+linux-firmware-marvell
 #lsb-release
 #livecd-sounds
 lsscsi
