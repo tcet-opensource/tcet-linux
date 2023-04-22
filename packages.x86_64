@@ -167,7 +167,7 @@ neofetch
 #grub
 calamares
 tcet-linux-installer-config
-#os-prober
+os-prober
 
 
 ## TCET Linux Browser
