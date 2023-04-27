@@ -124,7 +124,6 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
-zsh
 
 ## TCET Linux Core
 xorg
@@ -136,6 +135,8 @@ networkmanager
 network-manager-applet
 base-devel
 pacman-contrib
+zsh
+zsh-completions
 #virtualbox-guest-utils
 
 
