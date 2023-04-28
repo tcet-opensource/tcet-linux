@@ -188,10 +188,13 @@ blueman
 ## AUR Installer and Helper
 #paru
 
-# Printer Driver
+# Printer DriverS
 #cups
 #system-config-printer
 
 # Powerlevel10k
 ttf-meslo-nerd-font-powerlevel10k
-#zsh-theme-powerlevel10k-git
+zsh-theme-powerlevel10k-git
+zsh-completions
+zsh-autosuggestions
+zsh-syntax-highlighting
