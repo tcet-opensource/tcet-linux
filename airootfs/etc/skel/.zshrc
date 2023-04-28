@@ -11,11 +11,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
 
 #Display ISO version and distribution information in short
 alias version="sed -n 1p /etc/os-release && sed -n 7p /etc/os-release && sed -n 8p /etc/os-release"
