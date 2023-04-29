@@ -35,3 +35,8 @@ alias clr-cache="sudo pacman -Scc"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias remove="sudo pacman -R"
 alias autoremove="sudo pacman -Rns"
+
+# keyboard ctrl+arrow key issue solved
+bindkey '^[[1;5C' forward-word  # Ctrl+Right arrow
+bindkey '^[[1;5D' backward-word # Ctrl+Left arrow
+

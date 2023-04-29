@@ -18,6 +18,8 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+
 #Display ISO version and distribution information in short
 alias version="sed -n 1p /etc/os-release && sed -n 7p /etc/os-release && sed -n 8p /etc/os-release"
 
@@ -33,3 +35,8 @@ alias clr-cache="sudo pacman -Scc"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias remove="sudo pacman -R"
 alias autoremove="sudo pacman -Rns"
+
+# keyboard ctrl+arrow key issue solved
+bindkey '^[[1;5C' forward-word  # Ctrl+Right arrow
+bindkey '^[[1;5D' backward-word # Ctrl+Left arrow
+
