@@ -194,7 +194,7 @@ blueman
 
 # Powerlevel10k
 ttf-meslo-nerd-font-powerlevel10k
-zsh-theme-powerlevel10k-git
+zsh-theme-powerlevel10k
 zsh-completions
 zsh-autosuggestions
-zsh-syntax-highlighting
+zsh-fast-syntax-highlighting
