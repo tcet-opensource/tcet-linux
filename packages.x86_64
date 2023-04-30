@@ -198,3 +198,6 @@ zsh-theme-powerlevel10k
 zsh-completions
 zsh-autosuggestions
 zsh-fast-syntax-highlighting
+
+# Text Editor
+zed
