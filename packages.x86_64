@@ -36,7 +36,6 @@ gnu-netcat
 gpart
 #gpm
 gptfdisk
-#grml-zsh-config
 grub
 hdparm
 hyperv
@@ -198,6 +197,13 @@ zsh-theme-powerlevel10k
 zsh-completions
 zsh-autosuggestions
 zsh-fast-syntax-highlighting
+nerd-fonts-noto-sans-regular-complete
+awesome-terminal-fonts
+fzf
+powerline-fonts
+find-the-command-git
+mcfly
+#grml-zsh-config
 
 # Text Editor
 xed
