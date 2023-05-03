@@ -49,10 +49,10 @@ if [ -d "$HOME/.local/bin" ]; then
     export PATH=$HOME/.local/bin:$PATH
 fi
 
-#eval "$(starship init zsh)"
-#function set_win_title(){
-#    echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
-#}
+eval "$(starship init zsh)"
+function set_win_title(){
+    echo -ne "\033]0; $USER@$HOST:${PWD/$HOME/~} \007"
+}
 precmd_functions+=(set_win_title)
 
 
@@ -108,9 +108,9 @@ zstyle ':completion:*' cache-path ~/.cache/zcache
 # automatically load bash completion functions
 autoload -U +X bashcompinit && bashcompinit
 
-#HISTFILE=~/.zhistory
-#HISTSIZE=50000
-#SAVEHIST=10000
+HISTFILE=~/.zhistory
+HISTSIZE=50000
+SAVEHIST=10000
 
 
 ## Keys
@@ -270,12 +270,12 @@ alias upd="/usr/bin/update"
 # Replace yay with paru if installed
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
-# Load Mcfly
-#export MCFLY_FUZZY=true
-#export MCFLY_RESULTS=20
-#export MCFLY_INTERFACE_VIEW=BOTTOM
-#export MCFLY_RESULTS_SORT=LAST_RUN
-#eval "$(mcfly init zsh)"
+Load Mcfly
+export MCFLY_FUZZY=true
+export MCFLY_RESULTS=20
+export MCFLY_INTERFACE_VIEW=BOTTOM
+export MCFLY_RESULTS_SORT=LAST_RUN
+eval "$(mcfly init zsh)"
 
 ## Run neofetch
 #neofetch
