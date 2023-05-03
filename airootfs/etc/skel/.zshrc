@@ -43,6 +43,11 @@ alias autoremove="sudo pacman -Rns"
 #bindkey '^[[1;5C' forward-word  # Ctrl+Right arrow
 #bindkey '^[[1;5D' backward-word # Ctrl+Left arrow
 
+
+
+
+
+
 ## Path section
 # Set $PATH if ~/.local/bin exist
 if [ -d "$HOME/.local/bin" ]; then
@@ -56,11 +61,16 @@ function set_win_title(){
 precmd_functions+=(set_win_title)
 
 
+## Plugins section: Enable fish style features
+# Use syntax highlighting
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-
+# Use autosuggestion
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Use history substring search
-#source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Use fzf
 source /usr/share/fzf/key-bindings.zsh
@@ -270,7 +280,7 @@ alias upd="/usr/bin/update"
 # Replace yay with paru if installed
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
-Load Mcfly
+# Load Mcfly
 export MCFLY_FUZZY=true
 export MCFLY_RESULTS=20
 export MCFLY_INTERFACE_VIEW=BOTTOM
@@ -278,4 +288,5 @@ export MCFLY_RESULTS_SORT=LAST_RUN
 eval "$(mcfly init zsh)"
 
 ## Run neofetch
-#neofetch
+neofetch
+
