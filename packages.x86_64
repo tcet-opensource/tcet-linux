@@ -203,6 +203,7 @@ fzf
 powerline-fonts
 find-the-command-git
 mcfly
+starship
 #grml-zsh-config
 
 # Text Editor
