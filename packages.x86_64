@@ -36,7 +36,6 @@ gnu-netcat
 gpart
 #gpm
 gptfdisk
-grml-zsh-config
 grub
 hdparm
 hyperv
@@ -131,7 +130,7 @@ xorg
 lightdm
 lightdm-gtk-greeter
 xdg-user-dirs
-bash-completion
+#bash-completion
 networkmanager
 network-manager-applet
 base-devel
@@ -157,11 +156,11 @@ pulseaudio-bluetooth
 pavucontrol
 
 ## TCET Linux Utility Packages
-#gvfs
+gvfs
 neofetch
-#galculator
+galculator
 #xdotool
-#vlc
+vlc
 
 ## TCET Linux Installer
 #grub
@@ -176,9 +175,9 @@ firefox
 
 ## TCET Linux Office Suite
 libreoffice-fresh
-ttf-ms-fonts
-ttf-roboto
-noto-fonts
+#ttf-ms-fonts
+#ttf-roboto
+#noto-fonts
 
 ## TCET Linux Bluetooth Driver & Manager
 bluez
@@ -188,6 +187,28 @@ blueman
 ## AUR Installer and Helper
 #paru
 
-# Printer Driver
+# Printer DriverS
 #cups
 #system-config-printer
+
+# Powerlevel10k
+#ttf-meslo-nerd-font-powerlevel10k
+zsh-theme-powerlevel10k
+zsh-completions
+zsh-autosuggestions
+zsh-fast-syntax-highlighting
+nerd-fonts-noto-sans-regular-complete
+awesome-terminal-fonts
+fzf
+powerline-fonts
+#find-the-command-git
+mcfly
+starship
+zsh-history-substring-search
+#grml-zsh-config
+
+# Firewalld
+firewalld
+
+# Git
+git
