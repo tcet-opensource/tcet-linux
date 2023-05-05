@@ -209,3 +209,6 @@ zsh-history-substring-search
 
 # Firewalld
 firewalld
+
+# Git
+git
