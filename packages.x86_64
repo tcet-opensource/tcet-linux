@@ -156,11 +156,11 @@ pulseaudio-bluetooth
 pavucontrol
 
 ## TCET Linux Utility Packages
-#gvfs
+gvfs
 neofetch
-#galculator
+galculator
 #xdotool
-#vlc
+vlc
 
 ## TCET Linux Installer
 #grub
