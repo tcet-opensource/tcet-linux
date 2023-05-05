@@ -40,7 +40,7 @@ alias remove="sudo pacman -R"
 alias autoremove="sudo pacman -Rns"
 
 # Fix keyring and gnupg mount isuue 
-alias fix-keys = "sudo rm -rvf /etc/pacman.d/gnupg && sudo pacman-key --init && sudo pacman-key --populate"
+alias fix-keys="sudo rm -rvf /etc/pacman.d/gnupg && sudo pacman-key --init && sudo pacman-key --populate"
 
 # keyboard ctrl+arrow key issue solved
 #bindkey '^[[1;5C' forward-word  # Ctrl+Right arrow

@@ -206,3 +206,6 @@ mcfly
 starship
 zsh-history-substring-search
 #grml-zsh-config
+
+# Firewalld
+firewalld

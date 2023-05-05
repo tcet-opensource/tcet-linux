@@ -1,0 +1,11 @@
+[Unit]
+Description=firewalld - dynamic firewall daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/firewalld --nofork --nopid
+
+[Install]
+WantedBy=multi-user.target
+
