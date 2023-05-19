@@ -115,7 +115,7 @@ udftools
 usbmuxd
 usbutils
 vim
-#virtualbox-guest-utils-nox
+virtualbox-guest-utils
 #vpnc
 wireless-regdb
 wireless_tools
@@ -212,3 +212,7 @@ firewalld
 
 # Git
 git
+
+# Docker
+#gnome-terminal
+docker

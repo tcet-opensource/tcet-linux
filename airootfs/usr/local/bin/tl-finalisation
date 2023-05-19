@@ -3,7 +3,8 @@
 chmod 750 /etc/sudoers.d
 chmod 750 /etc/polkit-1/rules.d
 chgrp polkitd /etc/polkit-1/rules.d
-chmod -v 750 /root
+chmod -v 750 /root/
+#chmod +x /home/$USER/kubernetes.sh
 
 rm -vf /etc/sudoers.d/g_wheel
 rm -vf /etc/sddm.conf.d/autologin.conf
