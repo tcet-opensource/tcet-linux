@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1624819824627808-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Open Xfce4 Terminal In Current Directory</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>view-hidden</icon>
+	<name>Show Hidden Files</name>
+	<unique-id>1624823324668515-1</unique-id>
+	<command>xdotool key &quot;ctrl+h&quot;</command>
+	<description>Show Files Starting With A Dot</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+</actions>

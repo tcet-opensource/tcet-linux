@@ -1,0 +1,11 @@
+[Default Applications]
+text/plain=xed.desktop
+application/xml=xed.desktop
+application/x-zerosize=xed.desktop
+
+[Added Associations]
+text/plain=xed.desktop;
+application/xml=xed.desktop;
+application/x-zerosize=xed.desktop;
+application/x-desktop=xed.desktop;
+

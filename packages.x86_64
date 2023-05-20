@@ -215,3 +215,6 @@ git
 
 # Thunar
 xdotool
+
+# Xed as Default text editor
+xed
