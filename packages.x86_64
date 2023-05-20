@@ -212,3 +212,6 @@ firewalld
 
 # Git
 git
+
+# Thunar
+xdotool
