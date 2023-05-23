@@ -115,7 +115,7 @@ udftools
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils
+#virtualbox-guest-utils
 #vpnc
 wireless-regdb
 wireless_tools
