@@ -1,0 +1,11 @@
+[Unit]
+Description=VirtualBox Guest Additions service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/VBoxService --foreground
+ExecStop=/usr/bin/VBoxService --pidfile /var/run/vboxadd-service.pid --no-start
+
+[Install]
+WantedBy=multi-user.target
+
