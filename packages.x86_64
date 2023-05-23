@@ -115,7 +115,7 @@ udftools
 usbmuxd
 usbutils
 vim
-#virtualbox-guest-utils
+#virtualbox-guest-utils-nox
 #vpnc
 wireless-regdb
 wireless_tools
@@ -218,7 +218,3 @@ xdotool
 
 # Xed as Default text editor
 xed
-
-# Docker
-#gnome-terminal
-docker
