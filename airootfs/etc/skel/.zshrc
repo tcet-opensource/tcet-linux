@@ -130,6 +130,11 @@ SAVEHIST=10000
 # Use emacs key bindings
 bindkey -e
 
+# Ctrl+ backspace delets the word
+
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
+
 # [PageUp] - Up a line of history
 if [[ -n "${terminfo[kpp]}" ]]; then
   bindkey -M emacs "${terminfo[kpp]}" up-line-or-history
