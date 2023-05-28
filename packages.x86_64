@@ -140,7 +140,6 @@ pacman-contrib
 
 ## TCET Linux Desktop Env - XFCE
 xfce4
-parole
 ristretto
 thunar-archive-plugin
 thunar-media-tags-plugin
@@ -193,7 +192,6 @@ pavucontrol
 gvfs
 neofetch
 galculator
-#xdotool
 vlc
 
 ## TCET Linux Installer
