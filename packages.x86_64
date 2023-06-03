@@ -250,3 +250,6 @@ xdotool
 
 # Xed as Default text editor
 xed
+
+# Duf
+duf
