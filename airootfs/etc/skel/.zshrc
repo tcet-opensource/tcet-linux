@@ -38,6 +38,7 @@ alias clr-cache="sudo pacman -Scc"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias remove="sudo pacman -R"
 alias autoremove="sudo pacman -Rns"
+alias neofetch="neofetch --ascii_distro TcetLinux1"
 
 # Fix keyring and gnupg mount isuue 
 alias fix-keys="sudo rm -rvf /etc/pacman.d/gnupg && sudo pacman-key --init && sudo pacman-key --populate"
