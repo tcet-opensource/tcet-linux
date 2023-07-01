@@ -38,6 +38,7 @@ alias clr-cache="sudo pacman -Scc"
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias remove="sudo pacman -R"
 alias autoremove="sudo pacman -Rns"
+alias neofetch="neofetch --ascii_distro TcetLinux1"
 
 # Fix keyring and gnupg mount isuue 
 alias fix-keys="sudo rm -rvf /etc/pacman.d/gnupg && sudo pacman-key --init && sudo pacman-key --populate"
@@ -48,8 +49,10 @@ alias fix-keys="sudo rm -rvf /etc/pacman.d/gnupg && sudo pacman-key --init && su
 
 
 
-
-
+# TO FIX THE SIZE OF LINES AND COLUMNS
+unset LINES
+unset COLUMNS
+# According to many article this might fix the issue
 
 ## Path section
 # Set $PATH if ~/.local/bin exist
@@ -129,6 +132,11 @@ SAVEHIST=10000
 ## Keys
 # Use emacs key bindings
 bindkey -e
+
+# Ctrl+ backspace delets the word
+
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
 
 # [PageUp] - Up a line of history
 if [[ -n "${terminfo[kpp]}" ]]; then
