@@ -21,6 +21,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# TO FIX THE SIZE OF LINES AND COLUMNS
+unset LINES
+unset COLUMNS
+# According to many article this might fix the issue
 
 
 #Display ISO version and distribution information in short
