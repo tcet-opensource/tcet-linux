@@ -28,5 +28,5 @@ MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 ScrollingOnKeystroke=FALSE
 FontName=Source Code Pro 10
-
+ColorUseTheme=TRUE
 

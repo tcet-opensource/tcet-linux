@@ -1,8 +1,6 @@
 ; xfce4-terminal GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
-(gtk_accel_path "<Actions>/terminal-window/use-system-font" "<Primary><Shift>s")
-(gtk_accel_path "/TerminalWindowPreferencesDialog/use-system-font" "")
 (gtk_accel_path "<Actions>/terminal-window/goto-tab-2" "<Alt>2")
 (gtk_accel_path "<Actions>/terminal-window/goto-tab-6" "<Alt>6")
 ; (gtk_accel_path "<Actions>/terminal-window/copy-input" "")
