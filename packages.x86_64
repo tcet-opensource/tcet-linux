@@ -223,9 +223,9 @@ blueman
 #cups
 #system-config-printer
 
-# Powerlevel10k
+# Other packages
 #ttf-meslo-nerd-font-powerlevel10k
-zsh-theme-powerlevel10k
+#zsh-theme-powerlevel10k
 zsh-completions
 zsh-autosuggestions
 zsh-fast-syntax-highlighting
