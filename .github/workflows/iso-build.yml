@@ -1,10 +1,10 @@
-name: Build TCET Linux ISO
+name: Release TCET Linux ISO
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     
@@ -17,30 +17,36 @@ jobs:
       
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Set current date as environment variable
         run: echo "DATE=`date +'%Y.%m.%d'`" >>$GITHUB_ENV
-      
+        
       - name: Synchronise package repositories and install archiso
-        run: pacman -Syu --noconfirm archiso mkinitcpio-archiso git squashfs-tools
-
-      - name: Build TCET Linux ISO
+        run: pacman -Syu --noconfirm archiso git archlinux-keyring reflector wget
+        
+      - name: Running Reflector
         run: |
-          pacman -S --noconfirm --needed archlinux-keyring wget
-          wget https://raw.githubusercontent.com/tcet-opensource/tcet-linux/main/pacman.conf -O /etc/pacman.conf
-          #echo "Fetching chaotic keys"
-          #pacman-key --init && pacman-key --recv-key 0706B90D37D9B881 FBA220DFC880C036 --keyserver keyserver.ubuntu.com && pacman-key --lsign-key 0706B90D37D9B881 FBA220DFC880C036 && pacman --noconfirm -U 'https://geo-mirror.chaotic.cx/chaotic-aur/chaotic-'{keyring,mirrorlist}'.pkg.tar.zst' && echo "[chaotic-aur]" >> /etc/pacman.conf && echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
-          #pacman-key --populate archlinux chaotic
-          mkarchiso -v -w ./work -o ./out ./
-          echo "ISO Built in ./out folder!"
+          reflector --country "France,Sweden" \
+          --verbose \
+          --sort rate \
+          --protocol https \
+          --latest 5 \
+          --save /etc/pacman.d/mirrorlist
+          pacman -Syu
           
+      - name: Building TCET Linux ISO
+        run: |
+            pacman -Syu
+            wget https://raw.githubusercontent.com/tcet-opensource/tcet-linux/main/pacman.conf -O /etc/pacman.conf
+            mkarchiso -v -w ./work -o ./out ./
+            echo "ISO Built in ./out folder!"
+            
       - name: Release ISO File
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: ncipollo/release-action@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: ${{ env.DATE }}
-          prerelease: false
-          title: "tcet-linux"
-          files: |
-            out/*
+            artifacts: "out/*.iso"
+            body: "v2.0.0"
+            generateReleaseNotes: false
+            name: "TCET-Linux"
+            tag: ${{ env.DATE }}
             
