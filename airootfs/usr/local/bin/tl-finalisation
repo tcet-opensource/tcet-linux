@@ -5,8 +5,8 @@ chmod 750 /etc/polkit-1/rules.d
 chgrp polkitd /etc/polkit-1/rules.d
 chmod -v 750 /root
 
-rm /usr/local/bin/welcome
-mv /usr/local/bin/welcome-after /usr/local/bin/welcome
+rm /usr/bin/welcome
+mv /usr/bin/welcome-after /usr/bin/welcome
 
 rm -vf /etc/sudoers.d/g_wheel
 rm -vf /etc/sddm.conf.d/autologin.conf
