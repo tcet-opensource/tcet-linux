@@ -268,3 +268,6 @@ tcet-linux-welcome
 
 # Task Manager
 glances
+
+# Calamares Desktop
+calamares_desktop
