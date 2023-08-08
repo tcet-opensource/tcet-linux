@@ -16,6 +16,9 @@ $time\
 [ ](fg:#1d2230)\
 \n▶▶ """
 
+# have to make the changes in the 2nd line regarding the icon (where have to replace the linux to tcet)
+
+# -------
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
 format = "[ $path ]($style)"
