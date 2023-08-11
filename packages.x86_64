@@ -276,3 +276,5 @@ calamares_desktop
 # Set once 
 tcet-linux-set-once
 
+# Wallpaper
+tcet-linux-wallpaper
