@@ -273,4 +273,6 @@ tcet-linux-task-manager
 # Calamares Desktop
 calamares_desktop
 
+# Set once 
+tcet-linux-set-once
 
