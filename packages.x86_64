@@ -271,7 +271,7 @@ glances
 tcet-linux-task-manager
 
 # Calamares Desktop
-calamares_desktop
+calamares-desktop
 
 # Set once 
 tcet-linux-set-once
