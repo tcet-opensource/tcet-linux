@@ -107,6 +107,7 @@ syslinux
 systemd-resolvconf
 tcpdump
 terminus-font
+
 testdisk
 tmux
 tpm2-tss
@@ -268,3 +269,6 @@ tcet-linux-welcome
 
 # Task Manager
 glances
+
+#New-terminal-font
+ttf-fira-mono
