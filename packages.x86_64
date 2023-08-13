@@ -265,3 +265,6 @@ neofetch-tcet
 
 # Tcet Linux Welcome
 tcet-linux-welcome
+
+#terminal-font
+ttf-fira-mono
