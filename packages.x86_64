@@ -234,7 +234,6 @@ awesome-terminal-fonts
 fzf
 powerline-fonts
 #find-the-command-git
-mcfly
 starship
 zsh-history-substring-search
 #grml-zsh-config
