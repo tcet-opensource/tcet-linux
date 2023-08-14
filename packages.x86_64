@@ -278,5 +278,5 @@ tcet-linux-set-once
 # Wallpaper
 tcet-linux-wallpaper
 
-#newFont-terminal
-ttf-fira-mono
+#newFont-terminal-stable
+ttf-iosevka
