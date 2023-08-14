@@ -97,9 +97,10 @@ install zsh-auto-completion
 
 - It is flexible and customizable.
 - Great platform to learn about Linux.
-- Useful for managing servers.
 - Allows you to have complete control over your system.
-- New technologies and techniques can be tried and used.
-- You set up media servers, playback software, and gaming environments tailored to your preferences.
 - Personalized security measures 
 
+# Important Links:
+
+- [TCET Linux Website](https://linux.tcetmumbai.in/)
+- [TCET Linux Documentation](https://opensource.tcetmumbai.in/docs/projects/tcet-linux/about-tcet-linux)
