@@ -270,5 +270,5 @@ tcet-linux-welcome
 # Task Manager
 glances
 
-#New-terminal-font
+#New-terminal-fonts
 ttf-fira-mono
