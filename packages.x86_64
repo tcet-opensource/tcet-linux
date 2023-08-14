@@ -49,7 +49,7 @@ less
 lftp
 libfido2
 libusb-compat
-linux-zen
+linux-lts
 #linux-atm
 linux-firmware
 linux-firmware-marvell
