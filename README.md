@@ -44,6 +44,37 @@ Auto Off: Similarly, "auto off" refers to a feature that automatically stops or 
 - Atleast 10GB HDD/SSD storage.
 - Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
+## To install and remove package
+Packages in TCET Linux is managed by package manager.
+Before installing packages it is always recommended to synchronize and update your package database for that use command:
+```
+sudo pacman -Syu
+```
+To install a package and its necessary depedencies use command:
+```
+sudo pacman -S package-name
+```
+To remove a package from your package database use command:
+```
+sudo -R package-name
+```
+Packages often come with dependencies that it relies on in order to function properly. To remove a package with it dependencies use command:
+```
+sudo -Rs package-name
+```
+## Autosuggestion and autocompletion
+ `Autosuggestion` is for the people who are using terminal frequently, sometimes users forget about previously entered command and their parameters .It is also helpful for beginners who often make mistakes.
+
+ You can add autosuggestions to your terminal in Linux by installing the `zsh-autosuggestions package`. You can run following command on terminal-
+```
+sudo apt install zsh-autosuggestions
+```
+
+`Autocompletion` allows user to automatically complete the command by typing partial commands. It is one of the most useful tools in any operating system. Linux distribution with *Bash* as their default shell has inbuilt auto-completion feature. Type your command partially and then hit `tab` key to autocomplete rest of your command.TCET Linux comes with autocompletion and autosuggestion as a `default in-built` feature.
+
+## Xfce
+`Xfce` is and `open-source desktop environment` for Unix and Unix like operating systems like Linux. Xfce provides user friendy interface while also being visually appealing. Its key feature includes `fast, lightweight and highly configurable`.In addition to this features,it runs `low on system resources` which makes it a perfect desktop environment for TCET Linux.  
+
  # Benefits of TCET - Linux:
 
 - It is FREE and open source. 
