@@ -75,25 +75,6 @@ install zsh-auto-completion
 ## Xfce
 `Xfce` is and `open-source desktop environment` for Unix and Unix like operating systems like Linux. Xfce provides user friendy interface while also being visually appealing. Its key feature includes `fast, lightweight and highly configurable`.In addition to this features,it runs `low on system resources` which makes it a perfect desktop environment for TCET Linux.  
 
- # Benefits of TCET - Linux:
-
-- It is FREE and open source. 
-- Provides a minimal base installation.
-- Lightweight system which leads to improved performance 
-- Follows a rolling release model.
-- Free to customize the system.
-- Uses the Pacman package manager, which is known for its speed and efficiency.
-- Access to AUR (Arch User Repository).
-- Leads to better understanding of how your operating system works.
-- Helpful & Active Community
-- Not owned by any corporate. 
-
-# How TCET - Linux will help you in your day-to-day life:
-
-- It is flexible and customizable.
-- Great platform to learn about Linux.
-- Allows you to have complete control over your system.
-- Personalized security measures 
 
 # Important Links:
 
