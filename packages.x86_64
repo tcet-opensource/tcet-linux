@@ -135,7 +135,7 @@ networkmanager
 network-manager-applet
 base-devel
 pacman-contrib
-#virtualbox-guest-utils
+virtualbox-guest-utils
 
 
 ## TCET Linux Desktop Env - XFCE
