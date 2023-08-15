@@ -14,7 +14,7 @@
 * Atleast 10GB HDD/SSD storage.
 * Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
-![installer](https://linux.tcetmumbai.in/_astro/image%209.3e859def.png)
+![installer](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/installer.png)
 
 The complete process for the installation is given in details on the website of **[TCET Linux](https://linux.tcetmumbai.in/)**.
 
@@ -23,7 +23,7 @@ The complete process for the installation is given in details on the website of 
 ## Welcome App
 The welcome app provides the user with the important links and shortcuts to some features and the installer.
 
-![Welcomeapp](https://cdn.discordapp.com/attachments/1077235507702013983/1140694346711179378/welcomeapp.png)
+![Welcomeapp](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/welcome-app.png)
 
 It includes the following options:
 * **Install TCET Linux**: This starts the TCET Linux Installer
@@ -100,13 +100,13 @@ Packages in TCET Linux is managed by package manager.
 
 * **neofetch** command
 
-![neofetch](https://media.discordapp.net/attachments/1083758345841819749/1141064025476714627/neo-full.png.png?width=1273&height=662) <br>
+![neofetch](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/neofetch.png) <br>
 
-![neo](https://media.discordapp.net/attachments/1083758345841819749/1141064024948220055/neo-term.png?width=1051&height=662)
+![neo](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/neo.png)
 
-![vb](https://media.discordapp.net/attachments/1083758345841819749/1141064025187303594/sys-mon-full.png.png?width=1273&height=662)
+![vb](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/vb.png)
 
-![tab](https://cdn.discordapp.com/attachments/1083758345841819749/1141064875897008350/grid-term.png.png)
+![tab](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/tab.png)
 
 <br />
 
