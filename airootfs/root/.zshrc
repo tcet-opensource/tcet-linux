@@ -240,4 +240,3 @@ eval "$(mcfly init zsh)"
 
 ## Run neofetch
 #neofetch
-
