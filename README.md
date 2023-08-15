@@ -25,15 +25,67 @@ The welcome app provides the user with the important links and shortcuts to some
 ![Welcomeapp](https://cdn.discordapp.com/attachments/1077235507702013983/1140694346711179378/welcomeapp.png)
 
 It includes the following options:
-* Install TCET Linux
-* Fix Screen Resolution(VM)
-* Arch User Repository (Main Page)
-* Link to our Discord Server
-* Updating the PC
-* Updating the Mirrors
-* Arch Wiki (Main Page)
-* How you can contribute to TCET Linux
-* Toggle autostart for the Welcome App
-* About us
+* **Install TCET Linux**: This starts the TCET Linux Installer
+
+* **Fix Screen Resolution(VM)**: Adjusting the screen resolution to match the native resolution of the monitor, which can help improve image quality and prevent scaling issues. 
+
+* **Arch User Repository** (Main Page)
+
+* **Link to our Discord Server**
+
+* **Updating the PC**
+
+* **Updating the Mirrors**: It provides the user with the lastest mirrors.
+
+* **Arch Wiki** (Main Page)
+
+* **How you can contribute to TCET Linux**
+
+* **Toggle autostart for the Welcome App**: It is a toggle for the welcome app itself, which decides the launching of the "Welcome app" on user login.
+
+* **About us**
 ---
 
+### To Install and Remove packages
+Packages in TCET Linux is managed by package manager.
+Before installing any package it is always recommened to synchronize your package database. For that use command:
+```
+sync 
+```
+To install a package and its necessary depedencies use command:
+```
+install package_name
+```
+To remove a package from your package database use command:
+```
+remove package_name
+```
+Packages also come with dependencies on which package relies on in order to function properly. To remove package with its dependencies use command:
+```
+autoremove package_name
+```
+---
+## Terminal Features
+ `Autosuggestion` is for the people who are using terminal frequently, sometimes users forget about previously entered command and their parameters. It is also helpful for beginners who often make mistakes.
+
+ You can add autosuggestions to your terminal in Linux by installing the `zsh-autosuggestions package`. You can run following command on terminal:
+```
+ install zsh-autosuggestions
+```
+<br>
+
+`Autocompletion` allows user to automatically complete the command by typing partial commands. It is one of the most useful tools in any operating system. Linux distribution with *bash* as their default shell has inbuilt auto-completion feature. Type your command partially and then hit `tab` key to autocomplete rest of your command.TCET Linux comes with autocompletion and autosuggestion as a `default in-built` feature.
+You can add Autocompletion to your terminal by running command:
+```
+install zsh-auto-completion
+```
+---
+### Xfce
+`Xfce` is and `open-source desktop environment` for Unix and Unix like operating systems like Linux. We made this choice to ensure a smooth and intuitive user experience, recognizing Xfce's reputation for being lightweight, yet feature-rich, making it an ideal match for our operating system's philosophy.In addition to this features,it runs `low on system resources` which makes it a perfect desktop environment for TCET Linux.  
+
+---
+
+# Important Links:
+
+- [TCET Linux Website](https://linux.tcetmumbai.in/)
+- [TCET Linux Documentation](https://opensource.tcetmumbai.in/docs/projects/tcet-linux/about-tcet-linux)
