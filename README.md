@@ -15,6 +15,8 @@ TCET Linux is an open-source operating system providing basic services, and vari
 * Atleast 10GB HDD/SSD storage.
 * Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
+![installer](https://linux.tcetmumbai.in/_astro/image%209.3e859def.png)
+
 The complete process for the installation is given in details on the website of [TCET Linux](https://linux.tcetmumbai.in/).
 
 ---
@@ -85,7 +87,21 @@ install zsh-auto-completion
 
 ---
 
-# Important Links:
+## Glimpses of TCET Linux
+
+* **neofetch** command
+
+![neofetch](https://media.discordapp.net/attachments/1083758345841819749/1141064025476714627/neo-full.png.png?width=1273&height=662) <br>
+
+![neo](https://media.discordapp.net/attachments/1083758345841819749/1141064024948220055/neo-term.png?width=1051&height=662)
+
+![vb](https://media.discordapp.net/attachments/1083758345841819749/1141064025187303594/sys-mon-full.png.png?width=1273&height=662)
+
+![tab](https://cdn.discordapp.com/attachments/1083758345841819749/1141064875897008350/grid-term.png.png)
+
+---
+
+## Important Links:
 
 - [TCET Linux Website](https://linux.tcetmumbai.in/)
 - [TCET Linux Documentation](https://opensource.tcetmumbai.in/docs/projects/tcet-linux/about-tcet-linux)
