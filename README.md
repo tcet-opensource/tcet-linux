@@ -34,7 +34,7 @@ It includes the following options:
 
 * **Link to our Discord Server**
 
-* **Updating the PC**
+* **Updating the PC**: Through this you can upgrade all the packages in the system.
 
 * **Updating the Mirrors**: It provides the user with the lastest mirrors.
 
