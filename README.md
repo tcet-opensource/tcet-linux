@@ -11,7 +11,7 @@
 * 64 bit x86_64 processor (Intel/ AMD), with at least 2 CPU cores. (32-bit not supported)
 * Any GPU/iGPU with OpenGl 3.3+ support.
 * Atleast 2GB DDR3/DDR4 RAM.
-* Atleast 10GB HDD/SSD storage.
+* Atleast 8GB HDD/SSD storage.
 * Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
 ![installer](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/installer.png)
