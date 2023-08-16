@@ -40,7 +40,7 @@ It includes the following options:
 
 * **Arch Wiki** (Main Page)
 
-* **How you can contribute to TCET Linux**
+* **How you can contribute to TCET Linux**: It will redirect you to the official repo of TCET Linux
 
 * **Toggle autostart for the Welcome App**: It is a toggle for the welcome app itself, which decides the launching of the "Welcome app" on user login.
 
