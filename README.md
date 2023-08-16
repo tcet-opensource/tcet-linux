@@ -98,15 +98,8 @@ Packages in TCET Linux is managed by package manager.
 
 ## Glimpses of TCET Linux
 
-* **neofetch** command
+![tcet-linux-desktop](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/tcet-linux_desktop1.png)
 
-![neofetch](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/neofetch.png) <br>
-
-![neo](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/neo.png)
-
-![vb](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/vb.png)
-
-![tab](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/tab.png)
 
 <br />
 
