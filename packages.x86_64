@@ -190,7 +190,7 @@ pavucontrol
 
 ## TCET Linux Utility Packages
 gvfs
-neofetch
+#neofetch
 galculator
 vlc
 
@@ -261,6 +261,7 @@ file-roller
 
 # Neofetch Tcet
 tcet-linux-neofetch
+tcet-linux-lsb-release
 
 # Tcet Linux Welcome
 tcet-linux-welcome
