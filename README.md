@@ -1,4 +1,7 @@
 # TCET Linux
+
+![TCET LINUX](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/tcet-linux.png)
+
 **[TCET Linux](https://linux.tcetmumbai.in/)** is an **open-source operating system** providing basic services, and various software packages that make up the user-space applications, utilities and it is highly customized. Our goal in creating this operating system is to provide a platform that combines **robust functionality** with a **user-friendly experience**. Built from the ground up, TCET Linux boasts **efficient performance**, **customization options**, and a range of features tailored to meet the needs of both casual users and enthusiasts.
 
 <br />
@@ -17,7 +20,7 @@ Read our [workflow](https://opensource.tcetmumbai.in/docs/resources/workflows/ex
 * Atleast 8GB HDD/SSD storage.
 * Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
-![installer](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/installer.png)
+![installer](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/installer.png)
 
 The complete process for the installation is given in details on the website of **[TCET Linux](https://linux.tcetmumbai.in/)**.
 
@@ -26,7 +29,7 @@ The complete process for the installation is given in details on the website of 
 ## Welcome App
 The welcome app provides the user with the important links and shortcuts to some features and the installer.
 
-![Welcomeapp](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/welcome-app.png)
+![Welcomeapp](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/welcome-app.png)
 
 It includes the following options:
 * **Install TCET Linux**: This starts the TCET Linux Installer
@@ -101,7 +104,7 @@ Packages in TCET Linux is managed by package manager.
 
 ## Glimpses of TCET Linux
 
-![tcet-linux-desktop](https://github.com/tcet-opensource/tcet-linux-assets/blob/main/tcet-linux_desktop1.png)
+![tcet-linux-desktop](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/tcet-linux-desktop1.png)
 
 
 <br />
