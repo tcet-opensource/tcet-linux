@@ -7,7 +7,7 @@ sudo pacman -S archiso
 
 echo "Building Iso"
 echo "Warning don't press ctrl+c or ctrl+z when iso is building"
-sudo mkarchsio -v .
+sudo mkarchiso -v .
 
 echo "Do you want to remove tcet-linux-keyring from your system"
 read answer
