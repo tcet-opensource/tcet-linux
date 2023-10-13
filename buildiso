@@ -1,15 +1,19 @@
-echo "Downloading tcet-linux-keyring "
+#!/bin/bash
+
+echo "Downloading tcet-linux-keyring"
+sudo pacman -S wget --needed
 wget https://github.com/tcet-opensource/tcet-linux-applications/raw/main/x86_64/tcet-linux-keyring-23.10-5-x86_64.pkg.tar.zst
 sudo pacman -U tcet-linux-keyring*
+sudo rm -rf tcet-linux-keyring*
 
 echo "Installing archsio"
-sudo pacman -S archiso
+sudo pacman -S archiso --needed
 
 echo "Building Iso"
 echo "Warning don't press ctrl+c or ctrl+z when iso is building"
-sudo mkarchiso -v .
+sudo mkarchiso -v -w ./work -o ./out ./
 
-echo "Do you want to remove tcet-linux-keyring from your system"
+echo "Do you want to remove tcet-linux-keyring from your system [y/n]"
 read answer
 
 if [ "$answer" == "y" ] || [ "$answer" == "yes" ]; then
