@@ -4,19 +4,19 @@ echo "Installing archsio"
 sudo pacman -S archiso --needed
 
 echo "Setting up Keyring"
-# Akash Dubey (Shut in arch linux guy)
+# Akash6222
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
 sudo pacman-key --lsign-key 280178FA27665D44
 
-# Rishabh Jha (Neovim lober)
+# Rishabh672003
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 421FFABA41F36DA5
 sudo pacman-key --lsign-key 421FFABA41F36DA5
 
-# Atharva Vartak (Technical head)
+# 0xAtharv
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 02F660CD5FA77EBB
 sudo pacman-key --lsign-key 02F660CD5FA77EBB
 
-# Harsh Upadhyay (kya likhu?)
+# harshau007
 sudo pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
 sudo pacman-key --lsign-key BF4E1E687DD0A534
 
@@ -29,16 +29,16 @@ read answer
 
 if [ "$answer" == "y" ] || [ "$answer" == "yes" ]; then
 	echo "Removing tcet-linux-keyring."
-	# Akash Dubey (Shut in arch linux guy)
+	#  Akash6222
 	sudo pacman-key --delete 280178FA27665D44
 
-	# Rishabh Jha (Neovim lober)
+	#  Rishabh672003
 	sudo pacman-key --delete 421FFABA41F36DA5
 
-	# Atharva Vartak (Technical head)
+	#  0xAtharv
 	sudo pacman-key --delete 02F660CD5FA77EBB
 
-	# Harsh Upadhyay (kya likhu?)
+	# harshau007
 	sudo pacman-key --delete BF4E1E687DD0A534
 elif [ "$answer" == "n" ] || [ "$answer" == "no" ]; then
 	echo "tcet-linux-keyring present in your system."

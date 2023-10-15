@@ -124,21 +124,22 @@ OR
 ## Build ( Manually )
 ### Setup Keys
 ```bash
-# https://github.com/Akash6222
+# Akash6222
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
 sudo pacman-key --lsign-key 280178FA27665D44
 
-# https://github.com/Rishabh672003
+# Rishabh672003
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 421FFABA41F36DA5
 sudo pacman-key --lsign-key 421FFABA41F36DA5
 
-# https://github.com/0xAtharv
+# 0xAtharv
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 02F660CD5FA77EBB
 sudo pacman-key --lsign-key 02F660CD5FA77EBB
 
-# https://github.com/harshau007
+# harshau007
 sudo pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
 sudo pacman-key --lsign-key BF4E1E687DD0A534
+
 ```
 ### Build ISO
 ```bash
