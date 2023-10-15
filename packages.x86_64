@@ -279,5 +279,11 @@ tcet-linux-set-once
 # Wallpaper
 tcet-linux-wallpaper
 
+# Mirrorlist
+tcet-linux-mirrorlist
+
+# keyring
+tcet-linux-keyring
+
 #newFont-terminal-stable
 ttc-iosevka
