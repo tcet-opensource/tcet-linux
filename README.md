@@ -96,52 +96,57 @@ Packages in TCET Linux is managed by package manager.
 
 <br />
 
-## Glimpses of TCET Linux
+# Glimpses of TCET Linux
 
 ![tcet-linux-desktop](https://raw.githubusercontent.com/tcet-opensource/artwork/main/tcet-linux/tcet-linux-desktop1.png)
 
 
 <br />
 
-## How to build ISO
+# How to build ISO
 
-### 1. Clone repository
+## Install required package
+```bash
+sudo pacman -S archiso
+```
+
+## Clone repository
 ```bash
 git clone https://github.com/tcet-opensource/tcet-linux.git
 ```
 
-### 2. Setup Keys
+## Build ( Using Script )
 ```bash
-# Akash Dubey (Shut in arch linux guy)
+cd tcet-linux
+./buildiso
+```
+OR
+## Build ( Manually )
+### Setup Keys
+```bash
+# Akash Dubey
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
 sudo pacman-key --lsign-key 280178FA27665D44
 
-# Rishabh Jha (Neovim lober)
+# Rishabh Jha
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 421FFABA41F36DA5
 sudo pacman-key --lsign-key 421FFABA41F36DA5
 
-# Atharva Vartak (Technical head)
+# Atharva Vartak
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 02F660CD5FA77EBB
 sudo pacman-key --lsign-key 02F660CD5FA77EBB
 
-# Harsh Upadhyay (kya likhu?)
+# Harsh Upadhyay
 sudo pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
 sudo pacman-key --lsign-key BF4E1E687DD0A534
 ```
-
-### 3. Build
-```bash
-# Using build script
-cd tcet-linux
-./buildiso # Uses tcet-linux-keyring package
-```
-OR
+### Build ISO
 ```bash
 cd tcet-linux
-sudo mkarchiso -v . # Uses keyring from keyserver
+sudo mkarchiso -v .
 ```
 
-### 4. ISO will appear in `work/out/` directory
+## ISO will appear in `work/out/` directory
 <br />
 
 ## Important Links:
