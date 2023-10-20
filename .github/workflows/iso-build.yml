@@ -16,13 +16,13 @@ jobs:
       options: --privileged
       
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set current date as environment variable
         run: echo "DATE=`date +'%Y.%m.%d'`" >>$GITHUB_ENV
         
       - name: Synchronise package repositories and install archiso
-        run: pacman -Syu --noconfirm archiso git archlinux-keyring reflector wget
+        run: pacman -Syu --noconfirm archiso git archlinux-keyring reflector --needed
         
       - name: Running Reflector
         run: |
@@ -33,20 +33,41 @@ jobs:
           --latest 5 \
           --save /etc/pacman.d/mirrorlist
           pacman -Syu
+
+      - name: Setting Up Keyring
+        run: |
+          pacman-key --init
+          pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
+          pacman-key --lsign-key 280178FA27665D44
+          pacman-key --keyserver keyserver.ubuntu.com -r 421FFABA41F36DA5
+          pacman-key --lsign-key 421FFABA41F36DA5
+          pacman-key --keyserver keyserver.ubuntu.com -r 02F660CD5FA77EBB
+          pacman-key --lsign-key 02F660CD5FA77EBB
+          pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
+          pacman-key --lsign-key BF4E1E687DD0A534
           
       - name: Building TCET Linux ISO
         run: |
+            ls -al
             pacman -Syu
             wget https://raw.githubusercontent.com/tcet-opensource/tcet-linux/main/pacman.conf -O /etc/pacman.conf
             mkarchiso -v -w ./work -o ./out ./
             echo "ISO Built in ./out folder!"
+            ls -al
+      
+      - name: Generating Checksum
+        run: |
+          ls -al
+          cd out/
+          touch checksum
+          sha256sum  *.iso > checksum
+          ls -al
             
       - name: Release ISO File
         uses: ncipollo/release-action@v1
         with:
-            artifacts: "out/*.iso"
+            artifacts: "out/*.iso,out/checksum"
             body: "v2.0.0"
             generateReleaseNotes: false
             name: "TCET-Linux"
             tag: ${{ env.DATE }}
-            
