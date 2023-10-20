@@ -140,11 +140,9 @@ virtualbox-guest-utils
 
 ## TCET Linux Desktop Env - XFCE
 xfce4
-ristretto
 thunar-archive-plugin
 thunar-media-tags-plugin
 xfburn
-xfce4-artwork
 xfce4-battery-plugin
 xfce4-clipman-plugin
 xfce4-cpufreq-plugin
