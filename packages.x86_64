@@ -281,3 +281,6 @@ tcet-linux-wallpaper
 
 #newFont-terminal-stable
 ttc-iosevka
+
+#tcet-linux-keyring
+tcet-linux-keyring
