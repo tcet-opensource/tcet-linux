@@ -203,8 +203,6 @@ os-prober
 firefox
 #tcet-linux-firefox-settings
 
-## TCET Linux Office Suite
-libreoffice-fresh
 #ttf-ms-fonts
 #ttf-roboto
 #noto-fonts
