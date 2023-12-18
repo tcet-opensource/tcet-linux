@@ -22,7 +22,7 @@ jobs:
         run: echo "DATE=`date +'%Y.%m.%d'`" >>$GITHUB_ENV
         
       - name: Synchronise package repositories and install archiso
-        run: pacman -Syu --noconfirm archiso git archlinux-keyring reflector --needed
+        run: pacman -Syu --noconfirm archiso git archlinux-keyring wget reflector --needed
         
       - name: Running Reflector
         run: |
