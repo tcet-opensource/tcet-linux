@@ -1,0 +1,63 @@
+#!/bin/bash
+
+echo "Installing archsio"
+sudo pacman -Sy archiso --needed
+
+if [ -d "work" ] || [ -d "out" ]; then
+  sudo rm -rf work/ out/
+fi
+
+echo "Setting up Keyring"	
+
+if [ !$(sudo pacman-key -l | grep -E "280178FA27665D44") ]; then
+	# Akash6222
+    sudo pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
+	sudo pacman-key --lsign-key 280178FA27665D44
+fi
+
+if [ !$(sudo pacman-key -l | grep -E "421FFABA41F36DA5") ]; then
+	# Rishabh672003
+	sudo pacman-key --keyserver keyserver.ubuntu.com -r 421FFABA41F36DA5
+	sudo pacman-key --lsign-key 421FFABA41F36DA5
+fi
+
+if [ !$(sudo pacman-key -l | grep -E "02F660CD5FA77EBB") ]; then
+	# 0xAtharv
+	sudo pacman-key --keyserver keyserver.ubuntu.com -r 02F660CD5FA77EBB
+	sudo pacman-key --lsign-key 02F660CD5FA77EBB
+fi
+
+if [ !$(sudo pacman-key -l | grep -E "BF4E1E687DD0A534") ]; then
+	# harshau007
+	sudo pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
+	sudo pacman-key --lsign-key BF4E1E687DD0A534
+fi
+
+
+echo "Building Iso"
+echo "Warning don't press ctrl+c or ctrl+z when iso is building"
+sudo mkarchiso -v -w ./work -o ./out ./
+
+echo "Do you want to remove tcet-linux-keyring from your system [y/n]"
+read answer
+
+if [ "$answer" == "y" ] || [ "$answer" == "yes" ]; then
+	echo "Removing tcet-linux-keyring."
+	#  Akash6222
+	sudo pacman-key --delete 280178FA27665D44
+
+	#  Rishabh672003
+	sudo pacman-key --delete 421FFABA41F36DA5
+
+	#  0xAtharv
+	sudo pacman-key --delete 02F660CD5FA77EBB
+
+	# harshau007
+	sudo pacman-key --delete BF4E1E687DD0A534
+elif [ "$answer" == "n" ] || [ "$answer" == "no" ]; then
+	echo "tcet-linux-keyring present in your system."
+	exit 0
+else
+	echo "Invalid input. Please enter 'y' or 'n'."
+	exit 1
+fi
