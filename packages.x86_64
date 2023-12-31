@@ -281,9 +281,6 @@ tcet-linux-mirrorlist
 # keyring
 tcet-linux-keyring
 
-#newFont-terminal-stable
-ttc-iosevka
-
 # Aur helper
 yay
 
