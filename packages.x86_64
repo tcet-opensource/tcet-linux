@@ -286,3 +286,6 @@ yay
 
 #tcet-linux-keyring
 tcet-linux-keyring
+
+# MultiLang compiler
+tcet-linux-multilang-compiler
