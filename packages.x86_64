@@ -292,3 +292,6 @@ tcet-linux-keyring
 
 # MultiLang compiler
 tcet-linux-multilang-compiler
+
+# Cache Cleanup
+tcet-linux-cache-cleanup
