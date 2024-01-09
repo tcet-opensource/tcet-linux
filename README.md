@@ -105,24 +105,25 @@ Packages in TCET Linux is managed by package manager.
 
 # How to build ISO
 
-## Install required package
-```bash
-sudo pacman -S archiso
-```
-
-## Clone repository
-```bash
-git clone https://github.com/tcet-opensource/tcet-linux.git
-```
-
-## Build ( Using Script )
+### 1. Build ( Using Script )
 ```bash
 cd tcet-linux
 ./buildiso
 ```
 OR
-## Build ( Manually )
-### Setup Keys
+### 2. Build ( Manually )
+
+**Install required package**
+```bash
+sudo pacman -S archiso
+```
+
+**Clone repository**
+```bash
+git clone https://github.com/tcet-opensource/tcet-linux.git
+```
+
+**Setup Keys**
 ```bash
 # Akash6222
 sudo pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
@@ -141,13 +142,13 @@ sudo pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
 sudo pacman-key --lsign-key BF4E1E687DD0A534
 
 ```
-### Build ISO
+**Build ISO**
 ```bash
 cd tcet-linux
 sudo mkarchiso -v .
 ```
 
-## ISO will appear in `work/out/` directory
+### ISO will appear in `work/out/` directory
 <br />
 
 ## Important Links:
