@@ -105,6 +105,11 @@ Packages in TCET Linux is managed by package manager.
 
 # How to build ISO
 
+**Clone repository**
+```bash
+git clone https://github.com/tcet-opensource/tcet-linux.git
+```
+
 ### 1. Build ( Using Script )
 ```bash
 cd tcet-linux
@@ -116,11 +121,6 @@ OR
 **Install required package**
 ```bash
 sudo pacman -S archiso
-```
-
-**Clone repository**
-```bash
-git clone https://github.com/tcet-opensource/tcet-linux.git
 ```
 
 **Setup Keys**
