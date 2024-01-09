@@ -290,8 +290,8 @@ yay
 #tcet-linux-keyring
 tcet-linux-keyring
 
-# MultiLang compiler
-tcet-linux-multilang-compiler
+# Code Runner
+tcet-linux-code-runner
 
 # Cache Cleanup
 tcet-linux-cache-cleanup
