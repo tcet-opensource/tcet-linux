@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+package_sync{
+  pacman -Syy
+}
+
 script_cmdline ()
 {
     local param

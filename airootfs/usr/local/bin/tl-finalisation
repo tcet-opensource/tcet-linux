@@ -14,8 +14,7 @@ rm -vf /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -vf /root/{.automated_script.sh,.zlogin}
 rm -vf /usr/share/pixmaps/{archlinux-logo.png,archlinux-logo.svg,archlinux-logo-text.png,archlinux-logo-text.svg}
 
-rm -rf /etc/skel/Desktop
+# Remove calamares-desktop from Desktop 
 find / -name "calamares.desktop" -type f -exec rm -f {} \;
-
 
 rm /usr/local/bin/{tl-finalisation,livecd-sound,Installation_guide}

@@ -1,1 +1,1 @@
-sudo rm -rvf work/ out/ 
+sudo rm -rvf work/ out/ tcet-linux-keyring*

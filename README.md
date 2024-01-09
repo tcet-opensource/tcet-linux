@@ -2,6 +2,7 @@
 
 ![TCET LINUX](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/tcet-linux.png)
 
+
 **[TCET Linux](https://linux.tcetmumbai.in/)** is an **open-source operating system** providing basic services, and various software packages that make up the user-space applications, utilities and it is highly customized. Our goal in creating this operating system is to provide a platform that combines **robust functionality** with a **user-friendly experience**. Built from the ground up, TCET Linux boasts **efficient performance**, **customization options**, and a range of features tailored to meet the needs of both casual users and enthusiasts.
 
 <br />
@@ -20,6 +21,7 @@ Read our [workflow](https://opensource.tcetmumbai.in/docs/resources/workflows/ex
 * Atleast 8GB HDD/SSD storage.
 * Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
+
 ![installer](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/installer.png)
 
 The complete process for the installation is given in details on the website of **[TCET Linux](https://linux.tcetmumbai.in/)**.
@@ -30,6 +32,7 @@ The complete process for the installation is given in details on the website of 
 The welcome app provides the user with the important links and shortcuts to some features and the installer.
 
 ![Welcomeapp](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/welcome-app.png)
+
 
 It includes the following options:
 * **Install TCET Linux**: This starts the TCET Linux Installer
@@ -102,11 +105,58 @@ Packages in TCET Linux is managed by package manager.
 
 <br />
 
-## Glimpses of TCET Linux
+# Glimpses of TCET Linux
 
 ![tcet-linux-desktop](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/tcet-linux-desktop1.png)
 
+<br />
 
+# How to build ISO
+
+**Clone repository**
+```bash
+git clone https://github.com/tcet-opensource/tcet-linux.git
+```
+
+### 1. Build ( Using Script )
+```bash
+cd tcet-linux
+./buildiso
+```
+OR
+### 2. Build ( Manually )
+
+**Install required package**
+```bash
+sudo pacman -S archiso
+```
+
+**Setup Keys**
+```bash
+# Akash6222
+sudo pacman-key --keyserver keyserver.ubuntu.com -r 280178FA27665D44
+sudo pacman-key --lsign-key 280178FA27665D44
+
+# Rishabh672003
+sudo pacman-key --keyserver keyserver.ubuntu.com -r 421FFABA41F36DA5
+sudo pacman-key --lsign-key 421FFABA41F36DA5
+
+# 0xAtharv
+sudo pacman-key --keyserver keyserver.ubuntu.com -r 02F660CD5FA77EBB
+sudo pacman-key --lsign-key 02F660CD5FA77EBB
+
+# harshau007
+sudo pacman-key --keyserver keyserver.ubuntu.com -r BF4E1E687DD0A534
+sudo pacman-key --lsign-key BF4E1E687DD0A534
+
+```
+**Build ISO**
+```bash
+cd tcet-linux
+sudo mkarchiso -v .
+```
+
+### ISO will appear in `work/out/` directory
 <br />
 
 ## Important Links:

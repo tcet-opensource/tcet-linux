@@ -140,11 +140,9 @@ virtualbox-guest-utils
 
 ## TCET Linux Desktop Env - XFCE
 xfce4
-ristretto
 thunar-archive-plugin
 thunar-media-tags-plugin
 xfburn
-xfce4-artwork
 xfce4-battery-plugin
 xfce4-clipman-plugin
 xfce4-cpufreq-plugin
@@ -190,7 +188,7 @@ pavucontrol
 
 ## TCET Linux Utility Packages
 gvfs
-neofetch
+#neofetch
 galculator
 vlc
 
@@ -205,8 +203,6 @@ os-prober
 firefox
 #tcet-linux-firefox-settings
 
-## TCET Linux Office Suite
-libreoffice-fresh
 #ttf-ms-fonts
 #ttf-roboto
 #noto-fonts
@@ -261,6 +257,7 @@ file-roller
 
 # Neofetch Tcet
 tcet-linux-neofetch
+tcet-linux-lsb-release
 
 # Tcet Linux Welcome
 tcet-linux-welcome
@@ -278,5 +275,23 @@ tcet-linux-set-once
 # Wallpaper
 tcet-linux-wallpaper
 
+# Mirrorlist
+tcet-linux-mirrorlist
+
+# keyring
+tcet-linux-keyring
+
 #newFont-terminal-stable
 ttc-iosevka
+
+# Aur helper
+yay
+
+#tcet-linux-keyring
+tcet-linux-keyring
+
+# Code Runner
+tcet-linux-code-runner
+
+# Cache Cleanup
+tcet-linux-cache-cleanup
