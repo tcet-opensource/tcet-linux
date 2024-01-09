@@ -1,11 +1,18 @@
 # TCET Linux
 
-![TCET LINUX](https://raw.githubusercontent.com/tcet-opensource/artwork/main/tcet-linux/tcet-linux.png)
+![TCET LINUX](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/tcet-linux.png)
 
-## What is TCET Linux?
+
 **[TCET Linux](https://linux.tcetmumbai.in/)** is an **open-source operating system** providing basic services, and various software packages that make up the user-space applications, utilities and it is highly customized. Our goal in creating this operating system is to provide a platform that combines **robust functionality** with a **user-friendly experience**. Built from the ground up, TCET Linux boasts **efficient performance**, **customization options**, and a range of features tailored to meet the needs of both casual users and enthusiasts.
 
 <br />
+
+## Hacktoberfest
+### Powered by:
+<img width="311" alt="mlh-logo-color" src="https://github.com/tcet-opensource/hacktober-fest/assets/55846983/d5ccae96-86a7-4fed-8f00-e9f1d0aa5cac">
+
+### How to contribute
+Read our [workflow](https://opensource.tcetmumbai.in/docs/resources/workflows/external-workflow/) guide, and have a look at issues marked with the <code>Hacktoberfest</code> tag on it. Do not forget to read the rest of the README. For serious doubts, contact the project maintainers on our discord server.
 
 ## Minimum requirements for Installating TCET Linux
 * 64 bit x86_64 processor (Intel/ AMD), with at least 2 CPU cores. (32-bit not supported)
@@ -14,7 +21,8 @@
 * Atleast 8GB HDD/SSD storage.
 * Basic WPA/WPA2 compatible wifi card or ethernet supported motherboard.
 
-![installer](https://raw.githubusercontent.com/tcet-opensource/artwork/main/tcet-linux/installer.png)
+
+![installer](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/installer.png)
 
 The complete process for the installation is given in details on the website of **[TCET Linux](https://linux.tcetmumbai.in/)**.
 
@@ -23,7 +31,8 @@ The complete process for the installation is given in details on the website of 
 ## Welcome App
 The welcome app provides the user with the important links and shortcuts to some features and the installer.
 
-![Welcomeapp](https://raw.githubusercontent.com/tcet-opensource/artwork/main/tcet-linux/welcome-app.png)
+![Welcomeapp](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/welcome-app.png)
+
 
 It includes the following options:
 * **Install TCET Linux**: This starts the TCET Linux Installer
@@ -98,8 +107,7 @@ Packages in TCET Linux is managed by package manager.
 
 # Glimpses of TCET Linux
 
-![tcet-linux-desktop](https://raw.githubusercontent.com/tcet-opensource/artwork/main/tcet-linux/tcet-linux-desktop1.png)
-
+![tcet-linux-desktop](https://github.com/tcet-opensource/artwork/blob/main/tcet-linux/tcet-linux-desktop1.png)
 
 <br />
 
@@ -155,3 +163,15 @@ sudo mkarchiso -v .
 
 - [TCET Linux Website](https://linux.tcetmumbai.in/)
 - [TCET Linux Documentation](https://opensource.tcetmumbai.in/docs/projects/tcet-linux/about-tcet-linux)
+
+
+<div align="center">
+<h3> Connect with us<a href="https://gifyu.com/image/Zy2f"><img src="https://github.com/milaan9/milaan9/blob/main/Handshake.gif" width="50px"></a>
+</h3> 
+<p align="center">
+    <a href="https://twitter.com/tcetopensource" target="_blank"><img alt="Twitter" width="40px" src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png"></a> &nbsp&nbsp&nbsp
+    <a href="https://www.instagram.com/tcetopensource/" target="_blank"><img alt="Instagram" width="40px" src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"></a> &nbsp&nbsp&nbsp
+    <a href="https://discord.gg/r7ZhAREg2M" target="_blank"><img alt="Discord" width="40px" src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png"></a> &nbsp&nbsp&nbsp
+    <a href="mailto:opensource@tcetmumbai.in" target="_blank"><img alt="Gmail" width="40px" src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png"></a> &nbsp&nbsp&nbsp 
+    <a href="https://www.linkedin.com/company/tcet-opensource/" target="_blank"><img alt="LinkedIn" width="40px" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"></a> &nbsp&nbsp&nbsp
+</p> 

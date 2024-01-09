@@ -43,7 +43,9 @@ GRUB_DISABLE_RECOVERY=true
 #GRUB_COLOR_HIGHLIGHT="light-cyan/black"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
-GRUB_BACKGROUND="/usr/share/backgrounds/xfce/tcet-linux/wallpaper4.png"
+
+GRUB_BACKGROUND="/usr/share/backgrounds/xfce/wallpaper14.png"
+
 #GRUB_THEME=
 
 # Uncomment to get a beep at GRUB start
