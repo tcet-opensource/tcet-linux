@@ -44,7 +44,7 @@ GRUB_DISABLE_RECOVERY=true
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
 
-GRUB_BACKGROUND="/usr/share/backgrounds/xfce/wallpaper14.png"
+GRUB_BACKGROUND="/usr/share/backgrounds/xfce/tcet-linux/wallpaper14.png"
 
 #GRUB_THEME=
 
