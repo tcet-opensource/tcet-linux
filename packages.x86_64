@@ -269,10 +269,10 @@ tcet-linux-task-manager
 calamares-desktop
 
 # Set once 
-tcet-linux-set-once
+tcet-linux-xfce-set-once
 
 # Wallpaper
-tcet-linux-wallpaper
+tcet-linux-xfce-wallpaper
 
 # Mirrorlist
 tcet-linux-mirrorlist
